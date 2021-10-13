@@ -1,0 +1,1 @@
+web: gunicorn msha-site.wsgi --log-file -
