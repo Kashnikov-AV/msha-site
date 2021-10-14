@@ -1,5 +1,5 @@
 """
-Django settings for project on Heroku. For more info, see:
+Django settings for msha_site project on Heroku. For more info, see:
 https://github.com/heroku/heroku-django-template
 
 For more information on this file, see
@@ -22,7 +22,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "{{ secret_key }}"
+SECRET_KEY = "django-insecure-o=3x-8otcg5*u9%)ds3l2m822pror0s*!@y!*bq3$ud1vyf$yk"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

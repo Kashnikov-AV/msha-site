@@ -1,5 +1,5 @@
 """
-WSGI config for project_nameproject.
+WSGI config for msha_site project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

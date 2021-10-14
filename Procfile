@@ -1,1 +1,1 @@
-web: gunicorn msha-site.wsgi
+web: gunicorn msha_site.wsgi
