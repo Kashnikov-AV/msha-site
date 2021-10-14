@@ -1,1 +1,1 @@
-web: gunicorn msha-site.wsgi
+web: gunicorn {{ project_name }}.wsgi
