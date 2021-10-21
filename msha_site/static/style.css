@@ -1,0 +1,179 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.wrap{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.container{
+  max-width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/1616137881_IMG_4922.jpg");
+  background-position: left;
+  background-size: cover;
+  margin-bottom: 2px;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+}
+
+.logo-ref{
+  display: block;
+}
+
+.logo-image{
+  width: 8vw;
+  height: auto;
+}
+
+hgroup{
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-align: left;
+}
+
+hgroup > h1{
+  font-size: 4vw;
+}
+
+hgroup > h3{
+  font-size: 3vw;
+}
+
+h3{
+  text-align: center;
+  font-size: 2em;
+}
+
+.menu{
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: stretch;
+  gap: 2px;
+}
+
+.menu > li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.menu > li > a{
+  text-decoration: none;
+  font-family: Arial;
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 2px black;
+}
+
+.menu > li:hover{
+  background-color: rgba(127, 200, 0, 0.5);
+}
+
+.roll{
+  display: block;
+}
+
+.img-roll{
+  max-width: 100%;
+  height: auto;
+}
+
+.catalog{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.catalog-card{
+  flex: 1 1 calc((100% / 3) - 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: auto;
+  background-color: rgb(50,200,50);
+}
+
+.catalog-img{
+  width: auto;
+  height: 80%;
+  mix-blend-mode: luminosity;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.product-img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+#category{
+  margin: 20px 0;
+}
+
+#products{
+  margin: 40px 0 20px 0;
+}
+
+#sale{
+  color: blue;
+  margin: 20px 0;
+}
+
+
+.border{
+  border: 1px solid black;
+}
+
+footer{
+  height: 300px;
+  background-color: #078600;
+}
+
+.footer-list{
+  margin: 20px;
+  list-style: none;
+}
+
+@media (max-width: 600px){
+  .container{
+    max-width: 100%;
+  }
+}
