@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <title>RSAU-MSHA</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="" class="logo-ref">
+            <img src="{% static 'images\logo-respons.svg'%}" class="logo-image" alt="logo">
+          </a>
+          <hgroup>
+            <h1>Сельхоз продукция</h1>
+            <h3>РГАУ-МСХА им. Тимирязева</h3>
+          </hgroup>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="">Главная</a></li>
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">О нас</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="roll">
+          <img class="img-roll" src="images\1616138084_IMG_4925.jpg" alt="">
+        </section>
+        <a name="catalog"></a>
+        <h3 id="category">Наш ассортимент</h3>
+        <section class="catalog">
+          <div class="catalog-card">
+            <img src="images\tomato.svg" alt="" class="catalog-img">
+            <p>Овощи</p>
+          </div>
+          <div class="catalog-card">
+            <img src="images\bananas.svg" alt="" class="catalog-img">
+            <p>Фрукты</p>
+          </div>
+          <div class="catalog-card">
+            <img src="images\milk.svg" alt="" class="catalog-img">
+            <p>Молоко</p>
+          </div>
+          <div class="catalog-card">
+            <img src="images\strawberry.svg" alt="" class="catalog-img">
+            <p>Ягоды</p>
+          </div>
+          <div class="catalog-card ">
+            <img src="images\apitherapy.svg" alt="" class="catalog-img">
+            <p>Продукты пчеловодства</p>
+          </div>
+          <div class="catalog-card ">
+            <img src="images\tree.svg" alt="" class="catalog-img">
+            <p>Рассада</p>
+          </div>
+          <div class="catalog-card ">
+            <img src="images\flower.svg" alt="" class="catalog-img">
+            <p>Цветы и декоративные растения</p>
+          </div>
+        </section>
+        <h3 id="products">Продукты</h3>
+        <section class="products">
+          <div class="product-card">
+            <img src="images\51182e-300x300.jpg" alt="кабачок" class="product-img">
+            <p class="product-name">Кабачок</p>
+            <p class="product-price">100р.</p>
+          </div>
+          <div class="product-card">
+            <img src="images\2d1fff-300x300.png" alt="кабачок" class="product-img">
+            <p class="product-name">Кабачок</p>
+            <p class="product-price">100р.</p>
+          </div>
+          <div class="product-card">
+            <img src="images\5b647d-300x300.jpg" alt="кабачок" class="product-img">
+            <p class="product-name">Кабачок</p>
+            <p class="product-price">100р.</p>
+          </div>
+          <div class="product-card">
+            <img src="images\5f0caa-300x300.png" alt="кабачок" class="product-img">
+            <p class="product-name">Кабачок</p>
+            <p class="product-price">100р.</p>
+          </div>
+          <div class="product-card">
+            <img src="images\186f67-300x300.jpg" alt="кабачок" class="product-img">
+            <p class="product-name">Кабачок</p>
+            <p class="product-price">100р.</p>
+          </div>
+          <div class="product-card">
+            <img src="images\509c86-300x300.jpg" alt="кабачок" class="product-img">
+            <p class="product-name">Кабачок</p>
+            <p class="product-price">100р.</p>
+          </div>
+        </section>
+        <section class="email-distribution">
+          <h3>Подпишитесь на рассылку</h3>
+          <h3 id="sale">Скидки и акции только для подписчиков</h3>
+          <form action="">
+            <input type="email" name="email">
+            <input type="button" name="subscribe" value="Подписаться">
+          </form>
+        </section>
+      </main>
+      <footer>
+        <a name="contacts"></a>
+        <ul class="footer-list border">
+          <li>Доставка</li>
+          <li>Контакты</li>
+          <li>еще</li>
+          <li>еще</li>
+          <li>еще</li>
+          <li>еще</li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
