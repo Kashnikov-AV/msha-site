@@ -9,19 +9,25 @@
   display: flex;
   align-content: center;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container{
-  max-width: 70%;
+  max-width: 800px;
   height: auto;
   display: flex;
   flex-direction: column;
 }
 
+main{
+  width: 100%;
+}
+
 header{
   display: flex;
   flex-direction: column;
-  background-image: url("images/1616137881_IMG_4922.jpg");
+  background-image: url("images/cucumbers.jpg");
   background-position: left;
   background-size: cover;
   margin-bottom: 2px;
@@ -108,26 +114,19 @@ h3{
 }
 
 .catalog-card{
-  flex: 1 1 calc((100% / 3) - 2rem);
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 100px;
   width: auto;
   background-color: rgb(50,200,50);
-}
-
-.catalog-img{
-  width: auto;
-  height: 80%;
-  mix-blend-mode: luminosity;
 }
 
 .products{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 10px;
+
 }
 
 .product-card{
@@ -135,7 +134,6 @@ h3{
   flex-direction: column;
   align-items: center;
   width: 200px;
-  margin-bottom: 1rem;
 }
 
 .product-img{
@@ -170,10 +168,4 @@ footer{
 .footer-list{
   margin: 20px;
   list-style: none;
-}
-
-@media (max-width: 600px){
-  .container{
-    max-width: 100%;
-  }
 }

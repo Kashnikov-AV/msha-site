@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     # http://whitenoise.evans.io/en/stable/django.html#using-whitenoise-in-development
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
-    'base',
-    'blog',
+    'base.apps.BaseConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
@@ -70,6 +70,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
             'debug': DEBUG,
+            'libraries':{
+               # make your file entry here.
+               'filter_tags': 'base.templatetags.filter',
+            },
         },
     },
 ]

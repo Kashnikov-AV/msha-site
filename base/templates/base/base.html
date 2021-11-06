@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <title>RSAU-MSHA</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="{% url 'index' %}" class="logo-ref">
+            <img src="{% static 'images\logo-respons.svg'%}" class="logo-image" alt="logo">
+          </a>
+          <hgroup>
+            <h1>Сельхоз продукция</h1>
+            <h3>РГАУ-МСХА им. Тимирязева</h3>
+          </hgroup>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="{% url 'index' %}">Главная</a></li>
+            <li><a href="{% url 'index' %}#catalog">Каталог</a></li>
+            <li><a href="{% url 'blog' %}" >Блог</a></li>
+            <li><a href="">О нас</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+          {% block content %}
+
+          {% endblock content %}
+      </main>
+
+      <footer>
+        <a name="contacts"></a>
+        <ul class="footer-list border">
+          <li>Доставка</li>
+          <li>Контакты</li>
+          <li>еще</li>
+          <li>еще</li>
+          <li>еще</li>
+          <li>еще</li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
