@@ -1,0 +1,28 @@
+{% load static %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // инициализация слайдера
+      var slider = new SimpleAdaptiveSlider('.slider', {
+        loop: true,
+        autoplay: true,
+        interval: 4000,
+        swipe: true,
+      });
+    });
+  </script>
+
+<div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__items">
+        {% for slide in slider_block %}
+        <div class="slider__item">
+          <img class="img-fluid" src="{{slide.img.url}}" alt="{{slide.name}} слайд" loading="lazy">
+            <p>{{slide.title}}</p>
+            <p>{{slide.description}}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+    <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+  </div>

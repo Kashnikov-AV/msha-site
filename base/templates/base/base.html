@@ -6,20 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+   <!-- Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="{% static 'simple-adaptive-slider.css' %}">
+  <!-- Подключаем JS слайдера -->
+  <script defer src="{% static 'simple-adaptive-slider.js' %}"></script>
+
   <title>RSAU-MSHA</title>
 </head>
 <body>
   <div class="wrap">
     <div class="container">
       <header>
-        <div class="logo">
-          <a href="{% url 'index' %}" class="logo-ref">
+        <div class="logo-up">
+          <div class="logo">
+            <a href="{% url 'index' %}" class="logo-ref">
             <img src="{% static 'images\logo-respons.svg'%}" class="logo-image" alt="logo">
-          </a>
+            </a>
           <hgroup>
             <h1>Сельхоз продукция</h1>
             <h3>РГАУ-МСХА им. Тимирязева</h3>
           </hgroup>
+          </div>
+          <div class="div-bucket">
+            <img class="img-bucket" src="{% static 'images\shopping-basket_icon-icons.com_65049.png' %}" alt="bucket">
+            <p>1000.00 руб.</p>
+          </div>
         </div>
         <nav>
           <ul class="menu">
@@ -51,5 +66,6 @@
       </footer>
     </div>
   </div>
+
 </body>
 </html>

@@ -1,10 +1,13 @@
 {% extends 'base/base.html'%}
 {% load filter_tags %}
 {% load static %}
+{% load slider_tags %}
+
 {% block content %}
-        <section class="roll">
-          <img class="img-roll" src="images\1616138084_IMG_4925.jpg" alt="">
+        <section>
+          {% block_slider %}
         </section>
+
         <a name="catalog"></a>
         <h3 id="category">Наш ассортимент</h3>
         <section class="catalog">
