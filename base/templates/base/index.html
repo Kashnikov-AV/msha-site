@@ -21,9 +21,9 @@
         <section class="products">
             {% for product in products %}
                 <div class="product-card">
-                    <img src="{% static 'images\51182e-300x300.jpg' %}" alt="кабачок" class="product-img">
-                    <p class="product-name">Кабачок</p>
-                    <p class="product-price">100р.</p>
+                    <img src="{{product.img.url}}" alt="кабачок" class="product-img">
+                    <p class="product-name">{{product.name}}</p>
+                    <p class="product-price">{{product.price}} руб.</p>
                 </div>
             {% endfor %}
         </section>
