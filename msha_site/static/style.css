@@ -9,32 +9,30 @@ p{
   font-family: 'Montserrat', sans-serif;
 }
 
-.wrap{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+body{
+  min-height: 100vh;
 }
 
 .container{
-  max-width: 1200px;
-  height: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }
 
-main{
-  width: 100%;
+.main{
+  flex: 1 1 auto;
 }
 
-header{
+.header{
   display: flex;
   flex-direction: column;
   background-image: url("images/cucumbers.jpg");
   background-position: left;
   background-size: cover;
   margin-bottom: 2px;
+  flex: 0 0 auto;
 }
 
 .logo{
@@ -59,7 +57,7 @@ hgroup{
 .div-bucket{
   width: auto;
   height: 80px;
-  margin-right: 10px;
+  margin-right: 20px;
   box-shadow: 1px 1px 5px black;
   background-color: rgba(255,255,255, 0.3);
   text-align: center;
@@ -205,8 +203,7 @@ h3{
   border: 1px solid black;
 }
 
-footer{
-  height: 300px;
+.footer{
   background-color: #078600;
 }
 

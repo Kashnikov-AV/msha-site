@@ -47,7 +47,7 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-
+'''
 @receiver(pre_delete, sender=Slider)
 def slider_delete(sender, instance, **kwargs):
     # Pass false so FileField doesn't save the model.
@@ -57,4 +57,6 @@ def slider_delete(sender, instance, **kwargs):
 def product_delete(sender, instance, **kwargs):
     # Pass false so FileField doesn't save the model.
     instance.img.delete(False)
+'''
+
 

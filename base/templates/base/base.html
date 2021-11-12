@@ -18,9 +18,8 @@
   <title>RSAU-MSHA</title>
 </head>
 <body>
-  <div class="wrap">
     <div class="container">
-      <header>
+      <header class="header">
         <div class="logo-up">
           <div class="logo">
             <a href="{% url 'index' %}" class="logo-ref">
@@ -46,14 +45,12 @@
           </ul>
         </nav>
       </header>
-
-      <main>
+      <main class="main">
           {% block content %}
 
           {% endblock content %}
       </main>
-
-      <footer>
+      <footer class="footer">
         <a name="contacts"></a>
         <ul class="footer-list border">
           <li>Доставка</li>
@@ -65,7 +62,5 @@
         </ul>
       </footer>
     </div>
-  </div>
-
 </body>
 </html>
