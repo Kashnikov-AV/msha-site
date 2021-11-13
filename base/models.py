@@ -35,7 +35,7 @@ class Product(models.Model):
 
     price = models.FloatField(verbose_name='цена')
 
-    img = models.ImageField(blank=False, upload_to='slider/', verbose_name='добавить изобрадение')
+    img = models.ImageField(blank=False, upload_to='products/', verbose_name='добавить изобрадение')
 
     category = models.CharField(max_length=30,choices=CATEGORY_CHOICES, verbose_name='категория продукта', default='Vegetables')
 
